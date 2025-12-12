@@ -4,7 +4,27 @@ import AppLayout from '@/Layouts/AppLayout.vue'
 
 <template>
   <AppLayout>
-    <h1>Home</h1>
-    <p>Welcome :DDD Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe eos aspernatur molestiae, ratione expedita eaque molestias quaerat praesentium asperiores assumenda eligendi laboriosam, ad tempora ipsam numquam blanditiis vero voluptate voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quae hic, impedit velit facere maiores ipsum maxime dolorum atque enim reiciendis nesciunt repellat facilis cum? Fuga maiores laudantium soluta iusto.</p>
+    <h1 class="text-3xl font-bold mb-4">Home!</h1>
+    <p class="mb-6">Welcome :DDDD</p>
+
+    <div class="flex gap-3 justify-center">
+      <Link href="/about" class="btn">About</Link>
+      <Link href="/products" class="btn">Products</Link>
+      <Link href="/contact" class="btn">Contact</Link>
+    </div>
   </AppLayout>
 </template>
+
+<style scoped>
+.btn {
+  padding: 10px 20px;
+  background: #4b5563;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+.btn:hover {
+  background: #374151;
+}
+</style>
